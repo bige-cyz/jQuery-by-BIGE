@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        // $( document ).ready() only run once the DOM is ready for JS code to execute
+        $( document ).ready(function() {
+            console.log("document ready!");
+        })
+
+        // shorthand
+        $(function() {
+            console.log("shorthand ready!");
+        })
+
+        // $( window ).on("load", function()) will run once the entrie page is ready
+
+        $( window ).on("load", function() {
+            console.log("window ready!");
+        })
+    </script>
+</head>
+
+<body>
+    <a href="https://github.com/bige-cyz">Github Profile</a>
+
+    <!-- when iframe is ready, "window ready!" will be printed in console-->
+    <iframe src="https://learn.jquery.com/"></iframe>
+</body>
+
+</html>
